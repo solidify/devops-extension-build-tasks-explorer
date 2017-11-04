@@ -9,4 +9,4 @@ Have you ever wonder where that particular build task was used? This extension a
 
 Since a task can be used in any team project an option is available on the details page to show which definitions the selected task is used regardless of project.
 
-![Installed task view with opened details](/discovery/images/screenshot1.png)
+![Installed task view with opened details](/discovery/images/screenshot1.PNG)
