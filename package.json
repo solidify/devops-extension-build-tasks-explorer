@@ -1,0 +1,39 @@
+{
+  "name": "vsts-build-tasks-manager",
+  "version": "1.0.0",
+  "description": "VSTS Extension for managing installed build tasks",
+  "main": "app.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "test": "jasmine",
+    "prestart": "node ./build/template.js ./index.template.html ./dev-index-data ./dist/index.html",
+    "start": "webpack-dev-server --hot --inline --env=dev --progress --profile --colors",
+    "prebuild": "npm run clean",
+    "build": "webpack -p --env=prod --display-modules --profile --colors",
+    "postbuild": "node ./build/template.js ./index.template.html ./prod-index-data ./dist/index.html"
+  },
+  "keywords": [
+    "vsts",
+    "extension",
+    "office-ui-fabric-react"
+  ],
+  "author": "solidify",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^16.0.0-0",
+    "@types/react-dom": "^16.0.0-0",
+    "@types/semver": "^5.4.0",
+    "rimraf": "^2.6.1",
+    "source-map-loader": "^0.2.1",
+    "ts-loader": "^2.0.3",
+    "typescript": "2.3",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5",
+    "webpack-merge": "^4.1.0"
+  },
+  "dependencies": {
+    "office-ui-fabric-react": "5.10.0",
+    "semver": "^5.4.1",
+    "vss-web-extension-sdk": "^3.121.0"
+  }
+}

@@ -1,0 +1,39 @@
+
+
+.ms-SearchBox-field:focus{
+    padding: 0 !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.filterSection {
+    height: 40px;
+    width: 500px;
+}
+
+.grid-label {
+    margin-top: 20;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.align-left {
+    float: left;
+}
+
+.align-right {
+    float: right;
+}
+
+.ms-toggle.same-line > .ms-toggle-label {
+    display: inline-block;
+    padding-right: 10;
+}
+
+.ms-toggle.same-line > .ms-toggle-innerContainer {
+    display: inline-block;
+}

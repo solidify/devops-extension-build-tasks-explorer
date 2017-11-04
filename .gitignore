@@ -1,0 +1,9 @@
+dist/
+publish/
+node_modules/
+tmp/
+src/**/*.js
+src/**/*.js.map
+*.vsix
+index.html
+

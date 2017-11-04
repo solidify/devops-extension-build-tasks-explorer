@@ -1,0 +1,84 @@
+{
+    "manifestVersion": 1,
+    "id": "task-explorer",
+    "version": "1.0.10",
+    "publisher": "solidify-labs",
+    "name": "Task Explorer",
+    "description": "Manage installed build and release tasks",
+    "public": false,
+    "tags": [
+        "Build",
+        "Release",
+        "Task"
+    ],
+    "icons": {
+        "default": "../discovery/images/extension-icon.png"
+    },
+    "links": {
+        "home": {
+          "uri": "https://github.com/solidify/vsts-extension-build-tasks-explore"
+        },
+        "getstarted": {
+          "uri": "https://github.com/solidify/vsts-extension-build-tasks-explore"
+        },
+        "learn": {
+          "uri": "https://github.com/solidify/vsts-extension-build-tasks-explore"
+        },
+        "support": {
+          "uri": "https://github.com/solidify/vsts-extension-build-tasks-explore/issues"
+        }
+      },
+      "repository": {
+        "type": "git",
+        "uri": "https://github.com/solidify/vsts-extension-build-tasks-explore"
+      },
+        "branding": {
+        "color": "rgb(0, 0, 0)",
+        "theme": "dark"
+    },
+    "content": {
+        "license": {
+            "path": "discovery/LICENSE.md"
+          },
+        "details": {
+            "path": "discovery/overview.md"
+        }
+    },
+    "scopes": [
+        "vso.agentpools",
+        "vso.build",
+        "vso.release_execute"
+    ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services.Cloud"
+        },
+        {
+            "id": "Microsoft.TeamFoundation.Server",
+            "version": "[15.0,)"
+        }
+    ],
+    "categories": [
+        "Build and release"
+    ],
+    "contributions": [
+        {
+            "id": "build-tasks-hub",
+            "type": "ms.vss-web.hub",
+            "targets": [
+                "ms.vss-build-web.build-release-hub-group"
+            ],
+            "properties": {
+                "name": "Task Explorer",
+                "order": 1000,
+                "uri": "dist/index.html"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "../discovery/images/screenshot1.png",
+            "addressable": true
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "suppressTaskName": true,
+    //"command": "tsc",
+    //"isShellCommand": true,
+    //"args": ["-w", "-p", "."],
+    //"showOutput": "silent",
+    //"isBackground": true,
+    //"problemMatcher": "$tsc-watch"
+    "tasks": [
+        {
+            "taskName" : "debug",
+            "command" : "gulp",
+            //"args": [
+                //"--local"
+            //],
+            "isShellCommand": true,
+            "isBuildCommand": true,
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "showOutput": "silent",
+            "options": {
+                "env": {
+                    "debugURI" : "",
+                    "publishAuthToken" : "",
+                    "publisherName" : "",
+                    "extensionName" : ""
+                }
+            }
+        }
+    ]
+}
