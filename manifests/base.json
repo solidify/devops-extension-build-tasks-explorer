@@ -16,21 +16,21 @@
     },
     "links": {
         "home": {
-          "uri": "https://github.com/solidify/vsts-extension-build-tasks-explore"
+          "uri": "https://github.com/solidify/vsts-extension-build-tasks-explorer"
         },
         "getstarted": {
-          "uri": "https://github.com/solidify/vsts-extension-build-tasks-explore"
+          "uri": "https://github.com/solidify/vsts-extension-build-tasks-explorer"
         },
         "learn": {
-          "uri": "https://github.com/solidify/vsts-extension-build-tasks-explore"
+          "uri": "https://github.com/solidify/vsts-extension-build-tasks-explorer"
         },
         "support": {
-          "uri": "https://github.com/solidify/vsts-extension-build-tasks-explore/issues"
+          "uri": "https://github.com/solidify/vsts-extension-build-tasks-explorer/issues"
         }
       },
       "repository": {
         "type": "git",
-        "uri": "https://github.com/solidify/vsts-extension-build-tasks-explore"
+        "uri": "https://github.com/solidify/vsts-extension-build-tasks-explorer"
       },
         "branding": {
         "color": "rgb(0, 0, 0)",
@@ -47,7 +47,7 @@
     "scopes": [
         "vso.agentpools",
         "vso.build",
-        "vso.release_execute"
+        "vso.release"
     ],
     "targets": [
         {
