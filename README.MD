@@ -32,7 +32,7 @@ Dev workflow:
 
 ## Team ##
 
-We thank the following contributor(s): **Damir Petrač** and **Mathias Olausson**.
+We thank the following contributor(s): **Damir Petrač**, **Mathias Olausson** and **Tobias Larsson**.
 
 ## Contributions are welcome ##
 
