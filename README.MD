@@ -10,7 +10,7 @@ Have you ever wonder where that particular build task was used? This extension a
 
 Since a task can be used in any team project an option is available on the details page to show which definitions the selected task is used regardless of project.
 
-![Installed task view with opened details](discovery/images/screenshot1.png)
+![Installed task view with opened details](discovery/images/screenshot1.PNG)
 
 # Building the extension #
 ![](https://solidify.visualstudio.com/_apis/public/build/definitions/430a0fc1-6d24-414b-9bef-8afa19eb4b15/29/badge)
