@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "task-explorer",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "publisher": "solidify-labs",
     "name": "Task Explorer",
     "description": "Manage installed build and release tasks",

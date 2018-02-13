@@ -1,11 +1,4 @@
 
-
-.ms-SearchBox-field:focus{
-    padding: 0 !important;
-    background-color: transparent !important;
-    border-color: transparent !important;
-}
-
 .filterSection {
     height: 40px;
     width: 500px;

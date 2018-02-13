@@ -1,4 +1,6 @@
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 //const bundleAnalyzer = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
@@ -38,6 +40,14 @@ module.exports = {
             { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
         ]
     },
+
+    plugins: [
+        new CopyWebpackPlugin([
+            { from: 'css/', to: 'css/' },
+            { from: 'node_modules/office-ui-fabric-react/dist/css/fabric.min.css', to: 'css/'},
+            { from: 'node_modules/vss-web-extension-sdk/lib/VSS.SDK.min.js'}
+        ])
+    ],
 
     //plugins: [new bundleAnalyzer({analyzerMode : 'static'})],
     

@@ -1,10 +1,9 @@
 module.exports = function(){
     return {
         "header" : `
-            <script src="../node_modules/vss-web-extension-sdk/lib/VSS.SDK.min.js"></script>
-            <link href="../css/main.css" rel="stylesheet" />
-            <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.6.1/fabric.min.css">
-            <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.6.1/fabric.components.min.css">
+            <script src="scripts/VSS.SDK.min.js"></script>
+            <link href="scripts/css/main.css" rel="stylesheet" />
+            <link rel="stylesheet" href="scripts/css/fabric.min.css">
         `,
 
         "init" : `

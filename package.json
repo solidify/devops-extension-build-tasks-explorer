@@ -10,7 +10,9 @@
     "start": "webpack-dev-server --hot --inline --env=dev --progress --profile --colors",
     "prebuild": "npm run clean",
     "build": "webpack -p --env=prod --display-modules --profile --colors",
-    "postbuild": "node ./build/template.js ./index.template.html ./prod-index-data ./dist/index.html"
+    "postbuild": "node ./build/template.js ./index.template.html ./prod-index-data ./dist/index.html",
+    "package:prod": "npm run build && tfx extension create --root ./ --output-path ./publish/ --manifests ./manifests/base.json --overrides-file manifests/prod.json --rev-version",
+    "package:dev": "tfx extension create --root ./ --output-path ./publish/ --manifests ./manifests/base.json --overrides-file manifests/dev.json --rev-version"
   },
   "keywords": [
     "vsts",
@@ -23,6 +25,7 @@
     "@types/react": "^16.0.0-0",
     "@types/react-dom": "^16.0.0-0",
     "@types/semver": "^5.4.0",
+    "copy-webpack-plugin": "^4.4.1",
     "rimraf": "^2.6.1",
     "source-map-loader": "^0.2.1",
     "ts-loader": "^2.0.3",

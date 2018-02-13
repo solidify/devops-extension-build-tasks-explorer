@@ -1,16 +1,8 @@
 {
     "files": [
         {
-            "path": "../dist/css",
+            "path": "../dist",
             "addressable": true
-        },
-        {
-            "path": "../dist/scripts",
-            "addressable": true
-        },
-        {
-            "path": "../dist/index.html",
-            "addressable": true
-        }    
+        }
     ]
 }
