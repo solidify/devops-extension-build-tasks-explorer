@@ -1,0 +1,54 @@
+resources:
+- repo: self
+
+queue:
+  name: Hosted
+  demands: npm
+
+variables:
+  major: 0
+  minor: 2
+
+name: $(major).$(minor)$(rev:.r)
+
+steps:
+- task: Npm@1
+  displayName: 'npm install'
+  inputs:
+    verbose: true
+
+- task: Npm@1
+  displayName: 'npm build'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: 'run build'
+
+- task: CopyFiles@2
+  displayName: 'Copy Files to: dist/css'
+  inputs:
+    SourceFolder: css
+    TargetFolder: dist/css
+
+- task: ms-devlabs.vsts-developer-tools-build-tasks.package-extension-build-task.PackageVSTSExtension@1
+  displayName: 'Package Dev Extension'
+  inputs:
+    patternManifest: manifests/base.json
+    outputPath: 'build-task-explorer-dev-$(Build.BuildNumber).vsix'
+    extensionVersion: '$(Build.BuildNumber)'
+    arguments: '--output-path ./publish/ --overrides-file manifests/dev.json'
+
+- task: ms-devlabs.vsts-developer-tools-build-tasks.package-extension-build-task.PackageVSTSExtension@1
+  displayName: 'Package Extension'
+  inputs:
+    patternManifest: manifests/base.json
+    outputPath: 'build-task-explorer-$(Build.BuildNumber).vsix'
+    extensionVersion: '$(Build.BuildNumber)'
+    arguments: '--output-path ./publish/ --overrides-file manifests/prod.json'
+
+- task: CopyPublishBuildArtifacts@1
+  displayName: 'Copy Publish Artifact: drop'
+  inputs:
+    Contents: '**\build-task-explorer*-$(Build.BuildNumber).vsix'
+    ArtifactName: drop
+    ArtifactType: Container
