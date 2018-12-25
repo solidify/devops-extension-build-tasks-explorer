@@ -29,7 +29,7 @@
     "rimraf": "^2.6.1",
     "source-map-loader": "^0.2.1",
     "ts-loader": "^2.0.3",
-    "typescript": "2.3",
+    "typescript": "^2.9.2",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5",
     "webpack-merge": "^4.1.0"
