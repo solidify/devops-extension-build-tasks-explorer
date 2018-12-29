@@ -1,4 +1,9 @@
 # Build Task Explorer #
+
+|Build|Release|
+|---|---|
+|[![Build Status](https://solidify.visualstudio.com/OSS/_apis/build/status/devops-extension-build-tasks-explorer)](https://solidify.visualstudio.com/OSS/_build/latest?definitionId=56)|[![Deployment status](https://solidify.vsrm.visualstudio.com/_apis/public/Release/badge/9d04c453-c16d-4cd5-aadd-4162a63d5df5/5/15)](https://solidify.visualstudio.com/OSS/_release?definitionId=5)|
+
 Have you ever wonder where that particular build task was used? This extension adds an additional tab in Build and Release hub that lets you:
 
 - See installed tasks
@@ -13,11 +18,8 @@ Since a task can be used in any team project an option is available on the detai
 ![Installed task view with opened details](discovery/images/screenshot1.PNG)
 
 # Building the extension #
-![](https://solidify.visualstudio.com/_apis/public/build/definitions/430a0fc1-6d24-414b-9bef-8afa19eb4b15/29/badge)
 
 The extension is built and deployed to the VSTS Marketpace using VSTS, if you want to contibute to the public extension see [Contributions are welcome](#contributions-are-welcome).
-
-## Building the extension ##
 
 After cloning the repo change publisher and package settings in manifests/base.json. 
 
