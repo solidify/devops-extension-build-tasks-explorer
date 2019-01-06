@@ -72,12 +72,7 @@
                 "name": "Task Explorer",
                 "order": 1000,
                 "uri": "dist/index.html",
-                "iconAsset": "solidify-labs.build-task-explorer-test/static/hub-icon.png",
-                "_sharedData": {
-                    "assets": [
-                        "solidify-labs.build-task-explorer-test/static/hub-icon.png"
-                    ]
-                }
+                "icon": "asset://static/hub-icon.png"
             }
         }
     ],
