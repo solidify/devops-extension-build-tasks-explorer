@@ -28,10 +28,11 @@
     "copy-webpack-plugin": "^4.4.1",
     "rimraf": "^2.6.1",
     "source-map-loader": "^0.2.1",
-    "ts-loader": "^2.0.3",
-    "typescript": "^2.9.2",
-    "webpack": "^2.5.1",
-    "webpack-dev-server": "^2.4.5",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.2",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0",
+    "webpack-dev-server": "^3.1.14",
     "webpack-merge": "^4.1.0"
   },
   "dependencies": {

@@ -28,7 +28,7 @@ Dev workflow:
 1. run from root: ```tfx extension create --root ./ --output-path ./publish/ --manifests ./manifests/base.json --overrides-file manifests/dev.json --rev-version```
 1. deploy the vsix file from publish/ folder to marketplace manually and share it with VSTS account where you want to test
 1. install extension in account
-1. run ```npm start``` from root of the project. This will start webpack-dev-server and serve your application to https://localhost:8080 where VSTS will pick it up. It might be necessary to visit the location directly first to persuade Chrome to ignore untrusted certificate.
+1. run ```npm start``` from root of the project. This will start webpack-dev-server and serve your application to https://localhost:9001 where VSTS will pick it up. It might be necessary to visit the location directly first to persuade Chrome to ignore untrusted certificate.
 
 # Contributions #
 
