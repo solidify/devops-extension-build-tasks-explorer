@@ -71,13 +71,23 @@
             "properties": {
                 "name": "Task Explorer",
                 "order": 1000,
-                "uri": "dist/index.html"
+                "uri": "dist/index.html",
+                "iconAsset": "asset://static/hub-icon.png",
+                "_sharedData": {
+                    "assets": [
+                        "asset://static/hub-icon.png"
+                    ]
+                }
             }
         }
     ],
     "files": [
         {
             "path": "../discovery/images/screenshot1.PNG",
+            "addressable": true
+        },
+        {
+            "path": "../static",
             "addressable": true
         }
     ]
