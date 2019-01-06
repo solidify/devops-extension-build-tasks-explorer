@@ -12,7 +12,7 @@ module.exports = function(){
                 usePlatformStyles: true,
                 moduleLoaderConfig: {
                     paths: {
-                        local : '//localhost:8080'
+                        local : '//localhost:9001'
                     }
                 }
             });
